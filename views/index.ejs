@@ -1,8 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+            color: white;
+            padding: 50mm ;
+        }
+    </style>
+</head>
+<body>
     <head>
-        <title>Intro to Node and MongoDB</title>
+        <title >Intro to Node and MongoDB</title>
     </head>
+    
 
     <body onload="loader()">
     <script>
@@ -10,23 +31,44 @@
 
         }
     </script>    
-        <h1>Into to Node and MongoDB</h1>
-        <form method="post">
+
+        <center class="bl"><h1>Intro to Node and MongoDB</h1></center>
+        <br><br>
+  
+  
+    
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+  <symbol id="icon-coffee" viewBox="0 0 20 20">
+    <title>icon-coffee</title>
+    <path fill="currentColor" d="M15,17H14V9h3a3,3,0,0,1,3,3h0A5,5,0,0,1,15,17Zm1-6v3.83A3,3,0,0,0,18,12a1,1,0,0,0-1-1Z"/>
+    <rect fill="currentColor" x="1" y="7" width="15" height="12" rx="3" ry="3"/>
+    <path fill="var(--color-accent)" d="M7.07,5.42a5.45,5.45,0,0,1,0-4.85,1,1,0,0,1,1.79.89,3.44,3.44,0,0,0,0,3.06,1,1,0,0,1-1.79.89Z"/>
+    <path fill="var(--color-accent)" d="M3.07,5.42a5.45,5.45,0,0,1,0-4.85,1,1,0,0,1,1.79.89,3.44,3.44,0,0,0,0,3.06,1,1,0,1,1-1.79.89Z"/>
+    <path fill="var(--color-accent)" d="M11.07,5.42a5.45,5.45,0,0,1,0-4.85,1,1,0,0,1,1.79.89,3.44,3.44,0,0,0,0,3.06,1,1,0,1,1-1.79.89Z"/>
+  </symbol>
+</svg>
+<br><br>
+        <center><form method="post" style="display: flex; justify-content: space-around;color: white;flex-wrap: wrap;">
+            
             <label>Enter Your Name</label><br>
-            <input type="text" name="firstName" placeholder="Enter first name..." required>
-            <input type="text" name="lastName" placeholder="Enter last name..." required>
+            <input type="text" name="firstName" placeholder="Enter first name..." required class="inpu">
+            <input type="text" name="lastName" placeholder="Enter last name..." required >
             <input type="text" name="userid" placeholder="user id">
             <input type="submit" value="Add Name" formaction="/addname">
             <button formaction="/updatename">updatename</button>
-        </form>
+        </form></center>
+        
         <br>
         <br>
-        <p>value : in database : </p>
+        <center><p style="font-size: x-large;">Value coming from MongoDB Atlas</p></center>
+        <!-- <p>value : in database : </p> -->
         <br>
         <!-- <% for(var i = 0; i < wow.length; i++) { %>
         <p> <%=wow[i].firstName%> ____  <%=wow[i].lastName%></p>
         <%}%> -->
-        <table border="5">
+        <table border="5" class="table" style="color: white; text-align: center; font-size: medium;">
             <tr>
                 <td>Sno.</td>
                 <td>firstName</td>
@@ -47,4 +89,5 @@
         </form>
         </table>
     </body>
+</body>
 </html>
